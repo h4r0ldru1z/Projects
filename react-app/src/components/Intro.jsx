@@ -55,12 +55,14 @@ flex-direction: column;
 const Phone = styled.span`
   color: red;
   font-weight: bold;
+  padding-left: 15px;
 
 `;
 
 const ContactText = styled.span`
   color: gray;
   margin-top: 5px;
+  padding-left: 15px; 
 `;
 
 const Right = styled.div`
