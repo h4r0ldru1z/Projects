@@ -8,31 +8,41 @@ const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `
 const Left = styled.div`
-width: 60%;
-display: flex;
-align-items: center;
-justify-content: space-between;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `
 
 const Menu = styled.ul`
-display: flex;
-list-style: none;
+    display: flex;
+    list-style: none;
 `;
 const MenuItem = styled.li`
-margin-right:30px;
-font-size: 20px;
-font-weight: bold;
-color: gray;
+    margin-right:30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
 `;
 
+const Logo = styled.h1`
+    font-weight: bold;
+    text-decoration: underline crimson;
+`;
 
-const Logo = styled.h1
-    `
-font-weight: bold;
-text-decoration: underline crimson;
-`
+const Button = styled.button`
+    border: 2px solid black;
+    padding:10px 15px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: white;
+`;
 
 const Navbar = () => {
     return (
@@ -48,7 +58,7 @@ const Navbar = () => {
                         <MenuItem>Contact</MenuItem>
                     </Menu>
                 </Left>
-                <span>button</span>
+                <Button>JOIN TODAY</Button>
             </Wrapper>
         </Container>
     )
