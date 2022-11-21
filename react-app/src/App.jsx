@@ -6,4 +6,7 @@ const Container = styled.div`
 `
 
 const App = ()=> {
-  return <Container><Navbar/
+  return <Container><Navbar/></Container>;
+};
+
+export default App;
